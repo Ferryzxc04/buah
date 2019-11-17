@@ -27,7 +27,7 @@ public class detail_buahActivity extends AppCompatActivity {
         vit = findViewById(R.id.vitamin);
         desc = findViewById(R.id.desc_buah);
         gambarbuah = findViewById(R.id.detail_gmb);
-
+//      asd
         Intent intent = getIntent();
         int position = intent.getIntExtra("detail",0);
 
