@@ -21,16 +21,19 @@ public class detail_buahActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_buah);
 
+//      deklari
         buahArrayList.addAll(dataBuah.getListData());
         nama = findViewById(R.id.detail_nm_buah);
         asal = findViewById(R.id.negara);
         vit = findViewById(R.id.vitamin);
         desc = findViewById(R.id.desc_buah);
         gambarbuah = findViewById(R.id.detail_gmb);
-//      asd
+
+//      mengambil data
         Intent intent = getIntent();
         int position = intent.getIntExtra("detail",0);
 
+//      menampilkan data
         final buah buah = buahArrayList.get(position);
         this.setTitle(buah.getNama());
         gambarbuah.setImageResource(buah.getGambar());
